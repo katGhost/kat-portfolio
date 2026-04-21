@@ -1,42 +1,44 @@
-*,
-*::before,
-*::after {
+:root {
+  --red-dim:    #3b0a0a;
+  --red-mid:    #8b1a1a;
+  --red-bright: #cc2222;
+  --red-glow:   #ff4444;
+  --bg-base:    #0e0505;
+  --text-main:  #e8c0c0;
+  --text-muted: #7a3333;
+  --font-term:  "Courier New", Courier, monospace;
+}
+
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-:root {
-  --bg: #ffffff;
-  --text: #111111;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html {
+html, body {
   height: 100%;
+  background-color: var(--bg-base);
+  color: var(--text-main);
+  font-family: var(--font-term);
+  font-size: 16px;
+  line-height: 1.6;
+  /* Prevent white flash before paint */
+  color-scheme: dark;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+/* Utility: anything you want glowing red */
+.glow {
+  color: var(--red-glow);
+  text-shadow: 0 0 8px var(--red-bright), 0 0 20px var(--red-dim);
 }
 
-body {
-  min-height: 100%;
-  background: var(--background);
-  -webkit-font-smoothing: antialiased;
+/* Selection highlight matches the theme */
+::selection {
+  background: var(--red-mid);
+  color: #fff;
 }
 
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
+/* Scrollbar — optional but keeps the theme consistent in Chrome */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-base); }
+::-webkit-scrollbar-thumb { background: var(--red-mid); border-radius: 3px; }
