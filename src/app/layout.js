@@ -4,17 +4,22 @@ import Navbar from "@/components/Navbar";
 import NoiseCanvas from "@/components/NoiseCanvas";
 
 export const metadata = {
-  title: "AN Mogashoa - Portfolio",
-  description: "Portfolio of AN Mogashoa, a fullstack developer",
+  title: "my portfolio",
+  description: "Portfolio of a fullstack developer",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        {/* Layer 0: stays behind everything */}
         <NoiseCanvas />
-        <main style={{ position: "relative", zIndex: 1 }}>{children}</main>
+
+        {/* Layer 1: wraps all visible UI — one rule covers Navbar + every future component */}
+        <div className="site-layer">
+          <Navbar />
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   );
