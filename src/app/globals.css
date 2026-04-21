@@ -26,6 +26,11 @@ html, body {
   color-scheme: dark;
 }
 
+.site-layer {
+  position: relative;
+  z-index: 1;
+}
+
 /* Utility: anything you want glowing red */
 .glow {
   color: var(--red-glow);
