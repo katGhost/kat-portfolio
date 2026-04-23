@@ -31,7 +31,7 @@ html, body {
   z-index: 1;
 }
 
-/* Utility: anything you want glowing red */
+/* Utility: anything deemed neon-ish red */
 .glow {
   color: var(--red-glow);
   text-shadow: 0 0 8px var(--red-bright), 0 0 20px var(--red-dim);
@@ -43,7 +43,7 @@ html, body {
   color: #fff;
 }
 
-/* Scrollbar — optional but keeps the theme consistent in Chrome */
+/* Scrollbar -> keeps the theme consistent in chrome */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg-base); }
 ::-webkit-scrollbar-thumb { background: var(--red-mid); border-radius: 3px; }
