@@ -1,0 +1,149 @@
+/* sidebar */
+.sidebar {
+  width: 480px;
+  flex-shrink: 0;
+  height: 100%;
+  /* background: rgba(179, 56, 56, 0.15); */
+  padding: 0 1rem;
+}
+
+
+.sidebarContent {
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* buttons container */
+.ctaActions {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 1.25rem;
+  flex: 0;
+}
+
+/* Resume and GetInTouch BTNS */
+.ctaButton {
+  background: transparent;
+  border: 1.5px solid var(--red-dim);
+  padding: 10px 18px;
+  min-width: 140px;
+  text-align: center;
+  box-shadow: 4px 4px var(--red-dim);
+  color: var(--text-main);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.85px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  background: var(--red-glow);
+  color: var(--bg-base);
+  border: 1.5px solid var(--bg-base);
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+/* Profile */
+.profileContainer {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+/* .profileDescription {
+} */
+
+.profileTitle {
+  color: whitesmoke;
+  font-weight: bold;
+  letter-spacing: .65px;
+}
+
+.profileSubtitle {
+  color: var(--text-main);
+  letter-spacing: .8px;
+  margin-bottom: .75rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.profileBio {
+  font-weight: normal;
+  letter-spacing: 0.65px;
+  line-height: 20px;
+}
+
+/* Hobbies */
+.hobbiesContainer,
+.socialLinksContainer {
+  margin-bottom: 1rem;
+  border: 2px solid var(--red-dim);
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.2s ease;
+}
+
+.hobbiesContainer:hover,
+.socialLinksContainer:hover {
+  border: 2px solid var(--red-glow);
+}
+
+.hobbiesHeader,
+.socialLinksHeader {
+  background: var(--red-dim);
+  text-align: start;
+  padding: 0.25rem 0.5rem;
+}
+
+.hobbiesContainer:hover .hobbiesHeader,
+.socialLinksContainer:hover .socialLinksHeader {
+  background: var(--red-glow);
+  color: var(--bg-base);
+}
+
+.hobbiesTitle,
+.socialLinksTitle {
+  font-size: large;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+}
+
+.hobbilesList {
+  text-decoration: none;
+  list-style: none;
+  text-align: start;
+}
+
+.hobbiesListItem {
+  text-decoration: none;
+  list-style: none;
+  padding: 0 10px;
+}
+
+.socialLinksList {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0.6rem;
+  list-style: none;
+}
+
+.socialLinkItem {
+  background: var(--text-main);
+  padding: 0 5px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.socialLinkItem svg,
+.socialLinkItem img {
+  width: 36px;
+  height: 36px;
+  color: red !important;
+}
+
