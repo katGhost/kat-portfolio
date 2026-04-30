@@ -9,13 +9,13 @@ export default function Navbar() {
       {/* Me */}
       <div className={styles.titleContainer}>
         <div className={styles.title}>
-          <span className={styles.logo}>AN</span>
+          <span className={styles.logo}>AN.</span>
         </div>
       </div>
       {/* Navbar Links */}
       <div className={styles.navLinksContainer}>
         <div className={styles.navLinks}>
-          <Link className={styles.navItem} href="/">Home</Link>
+          {/* <Link className={styles.navItem} href="/">Home</Link> */}
           <Link className={styles.navItem} href="/projects">Projects</Link>
           <Link className={styles.navItem} href="/about">About</Link>
           <Link className={styles.navItem} href="/contact">Contact</Link>
