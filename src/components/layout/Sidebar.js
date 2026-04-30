@@ -19,7 +19,7 @@ export default function Sidebar() {
           {/* <div className={styles.profileDescription}> */}
             <h1 className={styles.profileTitle}>Andries N Mogashoa</h1>
             <p className={styles.profileSubtitle}>Junior Full-Stack Developer</p>
-            <p className={styles.profileBio}>I build fast, scalable APIs with modern technologies, and create innovative web solutions.</p>
+            <p className={styles.profileBio}>I build fast, scalable APIs, and create innovative web solutions.</p>
           {/* </div> */}
         </div>
 

@@ -1,20 +1,21 @@
 /* sidebar */
 .sidebar {
-  width: 480px;
+  width: 550px;
   flex-shrink: 0;
   height: 100%;
   /* background: rgba(179, 56, 56, 0.15); */
-  padding: 0 1rem;
+  padding: 0 2.5rem;
 }
 
 
 .sidebarContent {
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   margin: 0 auto;
   height: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  /* background: springgreen; */
 }
 
 /* buttons container */
@@ -28,11 +29,11 @@
 /* Resume and GetInTouch BTNS */
 .ctaButton {
   background: transparent;
-  border: 1.5px solid var(--red-dim);
+  border: 1.5px solid var(--red-mid);
   padding: 10px 18px;
   min-width: 140px;
   text-align: center;
-  box-shadow: 4px 4px var(--red-dim);
+  box-shadow: 4px 4px var(--red-mid);
   color: var(--text-main);
   font-weight: 600;
   font-size: 16px;
@@ -61,6 +62,7 @@
 .profileTitle {
   color: whitesmoke;
   font-weight: bold;
+  /* font-size: 32px; */
   letter-spacing: .65px;
 }
 
@@ -76,15 +78,15 @@
   font-weight: normal;
   letter-spacing: 0.65px;
   line-height: 20px;
+  color: var(--text-main);
 }
 
 /* Hobbies */
 .hobbiesContainer,
 .socialLinksContainer {
+  max-width: 340px;
   margin-bottom: 1rem;
-  border: 2px solid var(--red-dim);
-  text-decoration: none;
-  list-style: none;
+  border: 2px solid var(--red-mid);
   transition: all 0.2s ease;
 }
 
@@ -95,7 +97,7 @@
 
 .hobbiesHeader,
 .socialLinksHeader {
-  background: var(--red-dim);
+  background: var(--red-mid);
   text-align: start;
   padding: 0.25rem 0.5rem;
 }
@@ -144,6 +146,5 @@
 .socialLinkItem img {
   width: 36px;
   height: 36px;
-  color: red !important;
 }
 
