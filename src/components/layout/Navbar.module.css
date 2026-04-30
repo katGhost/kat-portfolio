@@ -9,12 +9,13 @@
 
 .titleContainer {
   background: transparent;
+  padding: 0 20px;
 }
 
 /* title -> container containing logo itself */
 .title {
   background: rgba(12, 6, 6, 0.5);
-  border: 2.5px solid var(--red-dim);
+  border: 2.5px solid var(--red-mid);
   border-radius: 50%;
   padding: 15px;
   width: 48px;
@@ -34,6 +35,7 @@
 /* Invisible bg */
 .navLinksContainer {
   background: transparent;
+  padding: 0 20px;
 }
 
 .navLinks {
@@ -43,11 +45,11 @@
 }
 
 .navItem {
-  border: 1.5px solid var(--red-dim);
+  border: 1.5px solid var(--red-mid);
   padding: 5px 10px;
   width: 110px;
   text-align: center;
-  box-shadow: 4px 4px var(--red-dim);
+  box-shadow: 4px 4px var(--red-mid);
   font-weight: 600;
   color: var(--text-main);
   transition: all 0.35s ease-in-out;
