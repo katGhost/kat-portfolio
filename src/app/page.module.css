@@ -27,6 +27,23 @@
   pointer-events: none;
 }
 
+.page {
+  /* background: red; */
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  text-align: start;
+}
+
+.mainPageContent {
+  padding: 1rem 2rem;
+}
+
+.introText {
+  margin-bottom: 2rem;
+  color: var(--text-main);
+  opacity: 0.9;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
 }
